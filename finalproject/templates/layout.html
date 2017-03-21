@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+    a.button {
+    background-color: rgba(0,0,0,0);
+    border: hidden;
+    color: black;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+    a.button:hover {
+      background-color: grey;
+      color: white;
+    }
+    pre {
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif, monospace;
+      font-size: 15px;
+
+    }
+    h2 {
+      text-align: center;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif, monospace;
+      font-size: 30px;
+
+    }
+    h3 {
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif, monospace;
+      font-size: 20px;
+      border: 1px solid white;
+      outline-style: inset;
+      outline-color: white;
+      text-indent: 5px;
+
+    }
+    #answers {
+      font-variant: small-caps;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif, monospace;
+
+    }
+    #intro {
+      text-align: center;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif, monospace;
+      font-size: 30px;
+
+    }
+    #result {
+      text-align: center;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif, monospace;
+      font-size: 25px;
+
+    }
+    #externresult {
+      position: absolute;
+      width: 100%;
+      height: 60%;
+    }
+    img {
+      width: 100%;
+    }
+    </style>
+    <title>Filterbubble popping</title>
+  </head>
+
+<body>
+  <header> <a href="/"> <img src="/static/bubblesheader.jpg" /> </a> </header>
+  {% block content %}
+  <p>Empty Layout</p>
+  {% endblock %}
+</body>
+</html>

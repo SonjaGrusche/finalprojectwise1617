@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <h2> Thank you for taking this step! </h2>
+  <div id="result">
+    <p>
+      If you are ready to destroy your old tailored online experience and see other perspectives, check out the link below!
+    </p>
+      If you want to see more, feel free to take the test again (or just reload the site)!
+    <p>
+    </p>
+  </div>
+  <div id="frame">
+    <iframe id="externresult" src="{{ site }}"></iframe> <br />
+    <a href="{{ site }}">{{ site }}</a>
+  </div>
+{% endblock %}

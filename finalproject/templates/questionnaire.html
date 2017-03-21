@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<pre> HINT: This is an anonymous test, feel free to answer sincerely! </pre>
+
+<form action="/questionnaire" method="post">
+  {% if error %}
+      <font color="red">You need to answer every question!</font>
+  {% endif %}
+  {% for question in questions %}
+    <p>
+      <h3>{{ question[0] }}</h3>
+      <div id="answers">
+          <label> <input type="radio" name="question{{ loop.index }}" value="{{ question[1] }}"> Strongly agree </label>
+          <label> <input type="radio" name="question{{ loop.index }}" value="{{ question[2] }}"> Agree </label>
+          <label> <input type="radio" name="question{{ loop.index }}" value="{{ question[3] }}"> Disagree </label>
+          <label> <input type="radio" name="question{{ loop.index }}" value="{{ question[4] }}"> Strongly disagree </label>
+      </div>
+    </p>
+
+  {% endfor %}
+
+  <input type="submit"  value="SUBMIT">
+</form>
+
+{% endblock %}
